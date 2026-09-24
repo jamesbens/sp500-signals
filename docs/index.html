@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S&amp;P 500 Signals · James Bensoussan</title>
+  <meta name="description" content="S&P 500 over the last 5 years with RSI-based entry (green) and exit (red) signals, refreshed daily by a tested Python pipeline." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <nav class="nav"><div class="wrap"><a class="logo" href="https://jamesbens.github.io/">JB<span>.</span></a>
+    <ul style="display:flex"><li><a href="https://github.com/jamesbens/sp500-signals">Source on GitHub</a></li></ul></div></nav>
+  <main class="wrap" style="padding:40px 0 60px">
+    <article class="card project">
+      <div class="kicker">Project 01</div>
+      <h1 style="font-size:clamp(28px,4vw,40px);margin:6px 0 10px">S&amp;P 500 entry &amp; exit signals, last 5 years</h1>
+      <div class="legend-inline">
+        <span><i class="swatch-line" style="border-color:var(--series-1)"></i>S&amp;P 500 close</span>
+        <span><i class="swatch-line" style="border-color:var(--sma-fast)"></i>50-day SMA</span>
+        <span><i class="swatch-line" style="border-color:var(--sma-slow);border-top-style:dashed"></i>200-day SMA</span>
+        <span><i class="tri-up"></i>Entry</span><span><i class="tri-down"></i>Exit</span>
+      </div>
+      <div id="chart" class="chart" role="img" aria-label="S&P 500 price with green entry and red exit markers"></div>
+      <div id="kpis" class="kpis"></div>
+      <p id="note" class="chart-note"></p>
+    </article>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script src="assets/charts-common.js"></script>
+  <script src="assets/sp500-chart.js"></script>
+  <script>
+    renderSp500({ chartEl: document.getElementById("chart"), kpiEl: document.getElementById("kpis"),
+                  noteEl: document.getElementById("note"), sources: ["data/sp500_signals.json"] });
+  </script>
+</body>
+</html>

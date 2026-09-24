@@ -1,0 +1,11 @@
+date,type,close,rsi,reason
+2022-01-28,entry,4431.85,38.1,RSI crossed above 30 (oversold rebound)
+2022-08-17,exit,4274.04,68.4,RSI crossed below 70 (overbought fade)
+2022-09-28,entry,3719.04,35.1,RSI crossed above 30 (oversold rebound)
+2023-06-20,exit,4388.71,68.6,RSI crossed below 70 (overbought fade)
+2023-10-04,entry,4263.75,35.1,RSI crossed above 30 (oversold rebound)
+2023-11-21,exit,4538.19,69.9,RSI crossed below 70 (overbought fade)
+2025-03-12,entry,5599.3,30.8,RSI crossed above 30 (oversold rebound)
+2025-07-07,exit,6229.98,68.4,RSI crossed below 70 (overbought fade)
+2026-03-23,entry,6581.0,37.2,RSI crossed above 30 (oversold rebound)
+2026-04-21,exit,7064.01,67.3,RSI crossed below 70 (overbought fade)
