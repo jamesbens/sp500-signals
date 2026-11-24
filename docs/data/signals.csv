@@ -9,3 +9,4 @@ date,type,close,rsi,reason
 2025-07-07,exit,6229.98,68.4,RSI crossed below 70 (overbought fade)
 2026-03-23,entry,6581.0,37.2,RSI crossed above 30 (oversold rebound)
 2026-04-21,exit,7064.01,67.3,RSI crossed below 70 (overbought fade)
+2026-11-23,entry,7237.17,41.3,RSI crossed above 30 (oversold rebound)
